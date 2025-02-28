@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Wydania cyfrowe magazynów VFP Communications: Handel, Media Marketing Polska, Food Service. Nasze magazyny to analizy rynkowe, rankingi, zestawienia, trendy, eksperckie komentarze, najciekawsze wydarzenia z zakresu: komunikacji i marketingu, produkcji i handlu oraz branży gastronomicznej. Wykorzystaj tę wiedzę i rozwijaj biznes z nami.">
+  <meta name="keywords" content="Miesięcznik Media Marketing Polska, Miesięcznik Food Service, Miesięcznik Handel, Wydania cyfrowe VFP Communications LTD">
+  <meta name="author" content="Konrad Dudziak">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="7iVygZ7rMR6Hlep0QoYJWqEuuSMtCNI9s3Xxxg3F">
+
+    <title>e-wydania.media.com.pl</title>
+
+    <!-- Scripts -->
+    <script src="https://e-wydania.media.com.pl/js/app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- Styles -->
+    <link href="https://e-wydania.media.com.pl/css/app.css" rel="stylesheet">
+    <link href="/css/flag-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+  background: #e2eaef;
+  font-family: "Open Sans", sans-serif;
+}
+</style>
+    <style>
+body {
+  background: #e2eaef;
+  font-family: "Open Sans", sans-serif;
+}
+h2 {
+  color: #000;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0 60px;
+}
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 4px;
+  border-radius: 1px;
+  background: #e33000;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel .item {
+  color: #747d89;
+  min-height: 325px;
+  text-align: center;
+  overflow: hidden;
+}
+.carousel .thumb-wrapper {
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.carousel .item .img-box {
+  height: 220px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.carousel .item img { 
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.carousel .item h4 {
+  font-size: 18px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+  margin-bottom: 5px;
+}
+.carousel .thumb-content .btn {
+  color: #e33000;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #e33000;
+  padding: 6px 14px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+  color: #fff;
+  background: #e33000;
+  box-shadow: none;
+}
+
+.carousel .thumb-content .btn-secondary{
+  color: #424242;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #424242;
+  padding: 6px 10px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+.carousel .thumb-content .btn-secondary:hover, 
+.carousel .thumb-content .btn-secondary:focus {
+  color: #fff;
+  background: #424242;
+  box-shadow: none;
+}
+
+
+.carousel .thumb-content .btn-info{
+  color: #727272;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #727272;
+  padding: 6px 10px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+.carousel .thumb-content .btn-info:hover, 
+.carousel .thumb-content .btn-info:focus {
+  color: #fff;
+  background: #727272;
+  box-shadow: none;
+}
+
+
+.carousel .thumb-content .btn-primary-2{
+  color: #007004;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #007004;
+  padding: 6px 10px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+.carousel .thumb-content .btn-primary-2:hover, 
+.carousel .thumb-content .btn-primary-2:focus {
+  color: #fff;
+  background: #007004;
+  box-shadow: none;
+}
+
+
+
+.carousel .thumb-content .btn i {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.carousel .item-price {
+  font-size: 13px;
+  padding: 2px 0;
+}
+.carousel .item-price strike {
+  opacity: 0.7;
+  margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+  height: 44px;
+  width: 40px;
+  background: #e33000;  
+  margin: auto 0;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background: #e33000;
+  opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin: -19px 0 0 0;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: none;
+  font-weight: bold;
+}
+.carousel-control-prev i {
+  margin-left: -2px;
+}
+.carousel-control-next i {
+  margin-right: -4px;
+}   
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border: none;
+}
+.carousel-indicators li { 
+  background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {  
+  background: rgba(0, 0, 0, 0.6);
+}
+.carousel .wish-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 16px;
+  color: #abb0b8;
+}
+.carousel .wish-icon .fa-heart {
+  color: #ff6161;
+}
+.star-rating li {
+  padding: 0;
+}
+.star-rating i {
+  font-size: 14px;
+  color: #ffc000;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $(".wish-icon i").click(function(){
+    $(this).toggleClass("fa-heart fa-heart-o");
+  });
+}); 
+</script>
+
+
+
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '9a75080f02fa7e6cfcadb5dc14ec24fccda8d6b5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="https://e-wydania.media.com.pl">
+                    <img src="/img/logo/vfp_logo.svg" style="max-height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Przełącz nawigację">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                            
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+
+                            <li class="nav-item dropdown">
+                            
+                                <a class="nav-link dropdown-toggle" href="/" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produkty</a>
+       
+                            <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                <a class="dropdown-item" href=""><span class="flag-icon flag-icon-handel"> </span>  - Magazyn „Handel”</a>                                
+                                <a class="dropdown-item" href=""><span class="flag-icon flag-icon-foodservice"> </span>  - Magazyn „Food Service”</a>
+                                <a class="dropdown-item" href=""><span class="flag-icon flag-icon-mmp"> </span> - Magazyn „Media Marketing Polska”</a>
+                            </div>
+                        </li>
+
+
+                        
+                                                            <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Zaloguj się</a>
+                                </li>
+                            
+                            
+
+                            
+                        
+                            
+                        
+              
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html"> Kontakt</a>
+                                </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+<div class="container">
+          <h2>Kontakt</h2>
+          
+          <div class="container"><div class="one"><h3 class='kontakt_red'><a id="kontakt_reklama">Prenumerata i obsługa serwisu:</a></h3><div class="block-notice_kontakt">    <img src="https://pic.media.com.pl/stopki/stopka_99b.png"  id="stopka_99"></div><h3 class='kontakt_red'><a id="kontakt_reklama">Reklama:</a></h3><div class="block-notice_kontakt"><div class="block-notice_kontakt2"><h3><a id="kontakt_reklama_mmp">Dyrektor sprzedaży</a></h3><p><img src="https://pic.media.com.pl/stopki/stopka_138b.png" id="stopka_138"><h4><a id="kontakt_reklama_mmp">Magazyn Media Marketing Polska</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_174b.png"><img src="https://pic.media.com.pl/stopki/stopka_93b.png" id="stopka_93"></p></div><br><div class="block-notice_kontakt2"><h4><a id="kontakt_reklama_foodservice_handel">Magazyn Handel</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_87b.png" id="stopka_87"><img src="https://pic.media.com.pl/stopki/stopka_139b.png" id="stopka_139"><img src="https://pic.media.com.pl/stopki/stopka_163b.png" id="stopka_163"> </p><h4><a id="kontakt_reklama_foodservice_handel">Magazyn Food Service</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_151b.png" id="stopka_151"></p></div></div><br><h3 class='kontakt_red'><a id="kontakt_marketing_eventy">Marketing / Konferencje / Wydarzenia:</a></h3><div class="block-notice_kontakt"><p><img src="https://pic.media.com.pl/stopki/stopka_63b.png" id="stopka_63"><img src="https://pic.media.com.pl/stopki/stopka_170b.png" id="stopka_170"><img src="https://pic.media.com.pl/stopki/stopka_99b.png"  id="stopka_99"><img src="https://pic.media.com.pl/stopki/stopka_135b.png" id="stopka_135"></p></div><br><h3 class='kontakt_red'><a id="kontakt_redakcja">Redakcja:</a></h3><div class="block-notice_kontakt"><div class="block-notice_kontakt2"><h4><a id="kontakt_redakcja_mmp">Redakcja Media Marketing Polska</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_21b.png" id="stopka_21"><img src="https://pic.media.com.pl/stopki/stopka_18b.png"  id="stopka_18"><img src="https://pic.media.com.pl/stopki/stopka_12b.png"  id="stopka_12"><img src="https://pic.media.com.pl/stopki/stopka_96b.png"  id="stopka_96"><img src="https://pic.media.com.pl/stopki/stopka_116b.png"  id="stopka_116"><img src="https://pic.media.com.pl/stopki/stopka_145b.png"  id="stopka_145"><img src="https://pic.media.com.pl/stopki/stopka_150b.png"  id="stopka_150"></p></div><Br><div class="block-notice_kontakt2"><h4><a id="kontakt_redakcja_handel">Redakcja Handel</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_159b.png"  id="stopka_159"><img src="https://pic.media.com.pl/stopki/stopka_72b.png"  id="stopka_72"><img src="https://pic.media.com.pl/stopki/stopka_92b.png"  id="stopka_92"><img src="https://pic.media.com.pl/stopki/stopka_73b.png"  id="stopka_73"><img src="https://pic.media.com.pl/stopki/stopka_169b.png"  id="stopka_169"></p></div><Br><div class="block-notice_kontakt2"><h4><a id="kontakt_redakcja_foodservice">Redakcja Food Service</a></h4><p><img src="https://pic.media.com.pl/stopki/stopka_156b.png"  id="stopka_156"><img src="https://pic.media.com.pl/stopki/stopka_165b.png"  id="stopka_165"></p></div></div><br><h3 class='kontakt_red'><a id="kontakt_sekretariat_redakcji">Sekretariat redakcji:</a></h3><div class="block-notice_kontakt"><p><img src="https://pic.media.com.pl/stopki/stopka_26b.png"></p></div><br><h3 class='kontakt_red'><a id="kontakt_produkcja">Produkcja:</a></h3><div class="block-notice_kontakt"><p><img src="https://pic.media.com.pl/stopki/stopka_157b.png" id="stopka_157"><img src="https://pic.media.com.pl/stopki/stopka_162b.png" id="stopka_162"></p></div><br><h3 class='kontakt_red'><a id="kontakt_administracja">Administracja:</a></h3><div class="block-notice_kontakt"><p><img src="https://pic.media.com.pl/stopki/stopka_175b.png"><img src="https://pic.media.com.pl/stopki/stopka_113b.png" ><img src="https://pic.media.com.pl/stopki/stopka_65b.png" id="stopka_65"></p></div><div class="c1"><h3 class='kontakt_red'><a id="kontakt_kolportaz">Kolportaż:</a></h3><div class="block-notice_kontakt3"><p><img src="https://pic.media.com.pl/stopki/stopka_89b.png" id="stopka_89"> </p></div></div><div class="c1"><h3 class='kontakt_red'><a id="kontakt_it">IT:</a></h3><div class="block-notice_kontakt3"><p><img src="https://pic.media.com.pl/stopki/stopka_2b.png" id="stopka_2"> </p></div></div><h3 class='kontakt_red'><a id="kontakt_finanse">Zarząd:</a></h3><div class="block-notice_kontakt"><p><img src="https://pic.media.com.pl/stopki/stopka_172b.png" id="stopka_172"></p></div></div></div>
+
+      </div>
+      </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+#kontakt_reklama {padding-bottom: 30px;}
+
+.jumbotron img {margin: 5px ; text-align: left}
+.jumbotron {
+  padding: 10px !important;
+}
+
+.block-notice_kontakt {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+}
+
+p {
+  line-height: 1.6; 
+  text-align: justify;
+  margin: 0;
+  font-size: 14px;
+}
+
+.star {
+  float: left;
+  max-width: 450px;
+  shape-margin:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+</style>
+
+
+          <script>
+        jQuery('[id^=stopka]').mouseover(function() {
+                jQuery(this).attr("src", "https://pic.media.com.pl/stopki/" + jQuery(this).attr("id") + "c.png");
+            })
+            .mouseout(function() {
+                jQuery(this).attr("src", "https://pic.media.com.pl/stopki/" + jQuery(this).attr("id") + "b.png");
+            });
+        </script>
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+
+<style>
+
+.agreement_red {
+    color: #d10007;
+    font-weight: bold;
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.bd-callout {
+    background-color: white;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-color: #d10007;
+    border-left-width: 1px;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+    .cursor-zoom{ cursor: zoom-in; }
+
+/* Kolor dla wszystkich linków z klasą "red" */
+a.red {
+  color: #d10007 !important;
+}
+
+/* Kolor dla linku z klasą "red" po najechaniu myszą */
+a.red:hover {
+  color: #d10007 !important;
+}
+
+/* Kolor dla odwiedzonych linków z klasą "red" */
+a.red:visited {
+  color: #d10007 !important;
+}
+
+/* Kolor dla aktywnego linku z klasą "red" (np. podczas klikania) */
+a.red:active {
+  color: #d10007 !important;
+}
+
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9KFKLRYL1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9KFKLRYL1');
+</script>
+
+
+<!-- GetResponse Analytics -->
+   <script type="text/javascript">
+
+   (function(m, o, n, t, e, r, _){
+           m['__GetResponseAnalyticsObject'] = e;m[e] = m[e] ||
+function() {(m[e].q = m[e].q || []).push(arguments)};
+           r = o.createElement(n);_ =
+o.getElementsByTagName(n)[0];r.async = 1;r.src =
+t;r.setAttribute('crossorigin', 'use-credentials');_.parentNode
+.insertBefore(r, _);
+       })(window, document, 'script',
+'https://ga.getresponse.com/script/d317f4c9-ef7e-4aa5-a948-0f053d17c9af/ga.js',
+'GrTracking');
+
+
+   </script>
+   <!-- End GetResponse Analytics -->
+
+
+</body>
+</html>
